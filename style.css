@@ -1,8 +1,33 @@
+:root {
+	--bc_color_0 : #f1f1f1;
+
+
+  --bg_1: #331a00;
+  --c_1: #ffe6cc;
+  
+  --c_header: var(--c_1);
+
+
+  --bg_menu:  #ffd9b3;
+  --c_menu:rgb(255, 153, 51);
+  --hover:#fcfcfc;
+  
+  --bg_footer: var(--bg_1);
+  --c_footer: var(--c_1);
+  
+  --boder: #ccc;
+  
+  
+  --font_1: normal normal normal 18px/1.3em 'Open Sans',sans-seri
+
+}
+
+
  /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 1px solid var(--border);
+  background-color: var(--bg_color_0);
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -13,23 +38,64 @@
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  transition: 0.3s;
+  transition: 0.8s;
+  font-weight: bold;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: var(--hover); 
+ opacity: 0.3;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #ffbf80;
 }
+
+
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #ff8c1a;
   border-top: none;
+  font: var(--font_1) 
 } 
+
+.header {
+  background-color: var(--bg_1) ;
+  color: var(--c_header) ;
+  font-family:"Open Sans",Helvetica,Arial,sans-serif
+}  
+
+
+.footer {
+  background-color:  var(--bg_footer) ;
+  color: var(--c_footer);
+  font-size: 0.7em;
+
+}  
+
+.menu {
+  background-color: var(--bg_menu);
+  color: var(--c_menu);
+
+
+}  
+
+body {
+  background-color: #ffcc99;
+}  
+
+img {
+  max-width: 70%;
+}
+.titulo {
+	  font-size: calc( min(1.8em,5vmin)) ;
+	vertical-align: top;
+	padding-top: 1em;
+	padding-left: -1em;
+	line-height: 1.6;
+}

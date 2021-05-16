@@ -12,10 +12,8 @@ function show ( section )
 		if ( tab[i].id== section )
 		{
 			tab[i].style.display='block';
-			tab[i].className+=" active " ;
 
 		}else {
-			tab[i].replace(" active ", "") ;
 			tab[i].style.display='none';
 		}
 	}
@@ -23,9 +21,16 @@ function show ( section )
 
 
 function openTab(evt, section) {
-log("opeTab");
-  show(section);
+	for(t of document.getElementsByClassName('tablink'))
+	{
+		t.className="tablink";
+	}
+	show(section);
+	evt.target.className+=" active"
+}
+function start( section )
+{
+   document.getElementsByClassName("tablink")[0].click()
 }
 
 
-log("Loaded scrip01.js");
