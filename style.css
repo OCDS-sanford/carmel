@@ -59,7 +59,7 @@
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ff8c1a;
+ /* border: 1px solid #ff8c1a;*/
   border-top: none;
   font: var(--font_1) 
 } 
@@ -75,6 +75,11 @@
   background-color:  var(--bg_footer) ;
   color: var(--c_footer);
   font-size: 0.7em;
+  
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 
 }  
 
