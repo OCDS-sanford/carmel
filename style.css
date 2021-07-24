@@ -104,3 +104,11 @@ img {
 	padding-left: -1em;
 	line-height: 1.6;
 }
+
+p .source {
+    text-align: right;
+    width: 20em;
+    margin-left: 30%;
+    font-size: 0.9em;
+    font-family: Helvetica;
+}
